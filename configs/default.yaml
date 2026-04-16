@@ -1,0 +1,55 @@
+experiment_name: ridrec_default
+seed: 42
+device: cuda
+output_dir: outputs/ridrec_default
+checkpoint_metric: mrr@20
+
+model:
+  num_items: 0
+  embedding_dim: 100
+  latent_dim: 100
+  context_dim: 100
+  encoder_hidden_dim: 100
+  projector_hidden_dim: 200
+  predictor_hidden_dim: 200
+  aggregator_hidden_dim: 128
+  denoiser_hidden_dim: 256
+  condition_dim: 128
+  time_dim: 128
+  encoder_dropout: 0.1
+  similarity_temperature: 0.2
+  topk_retrieval: 10
+  memory_size: 50000
+  momentum: 0.995
+  warmup_min_size: 1000
+  diffusion_steps: 50
+  reverse_trajectories: 4
+  beta_start: 0.0001
+  beta_end: 0.02
+  logvar_min: -6.0
+  logvar_max: 2.0
+  use_retrieval: true
+  use_np: true
+  use_diffusion: true
+  context_ratio: 0.1
+
+train:
+  train_path: data/processed/train.jsonl
+  valid_path: data/processed/valid.jsonl
+  metadata_path: data/processed/metadata.json
+  batch_size: 100
+  epochs: 20
+  lr: 0.001
+  weight_decay: 0.00001
+  grad_clip: 5.0
+  num_workers: 0
+  lambda_kl: 0.1
+  lambda_diff: 1.0
+  log_every: 50
+  save_best_only: true
+
+eval:
+  test_path: data/processed/test.jsonl
+  batch_size: 256
+  num_workers: 0
+  ks: [5, 10, 20]

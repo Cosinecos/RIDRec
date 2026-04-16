@@ -1,0 +1,4 @@
+experiment_name: ridrec_wo_diffusion
+output_dir: outputs/ridrec_wo_diffusion
+model:
+  use_diffusion: false

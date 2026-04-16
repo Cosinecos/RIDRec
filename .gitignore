@@ -1,0 +1,28 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# model artifacts / checkpoints (if any)
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# logs
+*.log
+
+# datasets
+/data/

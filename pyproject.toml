@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ridrec"
+version = "0.1.0"
+description = "Retrieval-Enhanced Neural-Process and Diffusion Modeling for Session-Based Recommendation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.1.0",
+  "pyyaml>=6.0",
+  "numpy>=1.24.0",
+  "pandas>=2.0.0",
+  "tqdm>=4.66.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["ridrec*"]

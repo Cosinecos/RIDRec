@@ -1,6 +1,7 @@
 # RIDRec
 
-PyTorch implementation of RIDRec: Retrieval-Enhanced Intent Diffusion for Session-Based Painting Recommendation.
+PyTorch implementation of RIDRec:RIDRec: Retrieval-Enhanced Intent Diffusion for Anonymous
+Short-Session Recommendation.
 
 This repository implements a trainable, evaluable, and ablation-ready version of RIDRec. The overall framework consists of three core components:
 

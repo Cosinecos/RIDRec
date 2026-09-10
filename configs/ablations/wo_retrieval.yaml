@@ -1,4 +1,0 @@
-experiment_name: ridrec_wo_retrieval
-output_dir: outputs/ridrec_wo_retrieval
-model:
-  use_retrieval: false

@@ -1,4 +1,0 @@
-experiment_name: ridrec_wo_np
-output_dir: outputs/ridrec_wo_np
-model:
-  use_np: false

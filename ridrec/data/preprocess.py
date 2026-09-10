@@ -112,7 +112,7 @@ class SessionPreprocessor:
             for idx in range(1, len(mapped)):
                 rows.append(
                     {
-                        "session_id": int(session_id),
+                        "session_id": str(session_id),
                         "items": mapped[:idx],
                         "target": mapped[idx],
                     }

@@ -127,8 +127,4 @@ If this work is useful for your research, please cite:
 }
 ```
 
-## License
-
-This project is released under the MIT License.
-
 > **Note:** The complete model implementation and detailed reproduction instructions are currently being organized and will be released in this repository soon.
